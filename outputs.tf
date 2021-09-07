@@ -1,9 +1,9 @@
 output "instance_id" {
-  description = "ID of the EC2 instance"
-  value       = aws_instance.app_server.id
+  description = "EC2 instance ID"
+  value       = aws_instance.example.id
 }
 
-output "instance_public_ip" {
-  description = "Public IP address of the EC2 instance"
-  value       = aws_instance.app_server.public_ip
+output "asg_id" {
+  description = "Auto Scaling group ID"
+  value       = aws_autoscaling_group.example.id
 }

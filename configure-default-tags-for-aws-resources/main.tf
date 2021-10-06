@@ -37,6 +37,7 @@ resource "aws_instance" "example" {
     Service   = "Custom"
     ManagedBy = "Resource"
   }
+  ebs_optimized = true
 }
 
 resource "aws_launch_template" "example" {
